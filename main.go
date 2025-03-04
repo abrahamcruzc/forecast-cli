@@ -44,7 +44,7 @@ func main() {
 		q = os.Args[1]
 	}
 
-	res, err := http.Get("http://api.weatherapi.com/v1/forecast.json?key=fabfeada38284d4fab932418250403&q=" + q + "&aqi=no")
+	res, err := http.Get("http://api.weatherapi.com/v1/forecast.json?key=&q=" + q + "&aqi=no")
 	if err != nil {
 		panic(err)
 	}
